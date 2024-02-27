@@ -26,3 +26,4 @@ paleta de colores:
 
 LOGO
 
+https://github.com/vlucascba/vargas-e4e/blob/main/img/logoe4e.png
