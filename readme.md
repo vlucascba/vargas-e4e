@@ -4,11 +4,7 @@ Ofrecemos clases de inglés niveladas por edades, **a partir de los 6 años.** N
 
 **Tipografias**
 
-Unna, Serif, Negrita/Bold, 16px para los textos del body.
-
-Wide Latin, 60pt Título
-
-Comic Sans MS, 30pt Para los botones de la barra nav.
+Skranji, Unna, Noto Serif Korean.
 
 (se aclara que el sitio sería “responsive” a todas las pantallas, siendo programado en REM por lo cual el tamaño en pixeles varía según la pantalla)
 
