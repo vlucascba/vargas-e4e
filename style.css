@@ -37,34 +37,39 @@ body {
   font-size: 16px;
 }
 
+
+
   /*imagen principal */
 .imagenprincipal {  /*IMAGEN DE FONDO cuerpo principal*/
   background-image: url(img/london.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 26rem;
-  width: 26rem;
+  height: 25rem;
   position: relative;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 .parrafoimagen { /*texto sobre el cuerpo principal y box de sombreado sobre .imagenprincipal */
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(68, 68, 68, 0.6);
   color: var(--blanco);
   margin: 0;
   flex-direction: column;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-radius: 10px;
 }
 
 h1 {
   text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
 }
 
 .mi-boton2 {
@@ -74,10 +79,17 @@ h1 {
     font-size: small;
     text-decoration: none;
     padding: 2px;
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
+.logoe4ediv {
+  display: flex;
+  justify-content: center;
+}
 
+.logoe4e {
+  width: 30%;
+}
 
 
 .nav-menu {
@@ -86,5 +98,8 @@ h1 {
   justify-content: space-between;
 }
 
-
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
 
