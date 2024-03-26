@@ -20,7 +20,7 @@ Skranji, Unna, Noto Serif Korean.
 --sexto: #104071;
 
 
-![LOGO](https://github.com/vlucascba/vargas-e4e/blob/main/img/logoe4e.png)
+![LOGO](https://github.com/vlucascba/vargas-e4e/blob/main/public/img/logoe4e.png)
 
 
 <h4 align="center">
