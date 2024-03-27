@@ -8,7 +8,59 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 </head>
+<header>
+    <!-- Contenido del header (logo, menú, etc.) -->
+        <nav class="nav-bg">  <!-- barra principal-->
+            <ul class="nav-menu contenedor">
+                <li class="nav-menu-item" style="list-style-type: none;">
+                    <a href="cursos.html" class="nav-menu-link nav-link">cursos</a></li>
+                <li class="nav-menu-item" style="list-style-type: none;">
+                    <a href="nosotros.html" class="nav-menu-link nav-link">nosotros</a></li>
+
+    <!--AULA VIRTUAL
+                    <li class="nav-menu-item" style="list-style-type: none;">
+                    <a href="#" class="nav-menu-link nav-link">aula virtual</a></li>
+    -->
+                <li class="nav-menu-item" style="list-style-type: none;">
+                    <a href="#" class="nav-menu-link nav-link">contacto</a></li>
+                </ul>
+                <button class="boton-hamburguesa" onclick="toggleMenu()">☰</button>
+        </nav>
+</header>
 <body>
-    
+    <main>
+        <div class="course">
+            <img src="https://github.com/vlucascba/vargas-e4e/blob/0af721d0fb777281561f2621e399b4a57c6fe799/public/img/speack.jpeg" alt="speaking">
+            <button onclick="toggleInfo(this)">Mostrar/Ocultar Info</button>
+            <section class="info">
+                <p>Información del primer curso</p>
+                <button>Inscribirse y Pagar</button>
+            </section>
+        </div>
+        <div class="course">
+            <img src="https://github.com/vlucascba/vargas-e4e/blob/0af721d0fb777281561f2621e399b4a57c6fe799/public/img/listen.jpeg" alt="listening">
+            <button onclick="toggleInfo(this)">Mostrar/Ocultar Info</button>
+            <section class="info">
+                <p>Información del segundo curso</p>
+                <button>Inscribirse y Pagar</button>
+            </section>
+        </div>
+        <div class="course">
+            <img src="https://github.com/vlucascba/vargas-e4e/blob/0af721d0fb777281561f2621e399b4a57c6fe799/public/img/write.jpeg" alt="writing">
+            <button onclick="toggleInfo(this)">Mostrar/Ocultar Info</button>
+            <section class="info">
+                <p>Información del tercer curso</p>
+                <button>Inscribirse y Pagar</button>
+            </section>
+        </div>
+        <div class="course">
+            <img src="https://github.com/vlucascba/vargas-e4e/blob/0af721d0fb777281561f2621e399b4a57c6fe799/public/img/read.jpeg" alt="reading">
+            <button onclick="toggleInfo(this)">Mostrar/Ocultar Info</button>
+            <section class="info">
+                <p>Información del cuarto curso</p>
+                <button>Inscribirse y Pagar</button>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
