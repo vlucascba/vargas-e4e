@@ -1,0 +1,4 @@
+# ignorar modulos
+node_modules/
+
+
