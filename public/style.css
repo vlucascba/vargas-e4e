@@ -33,7 +33,7 @@ html {
   box-sizing: border-box;
 }
 
-body {
+html, body {
   font-size: 16px;
   width: 320px;
   overflow: hidden;
@@ -137,12 +137,13 @@ h1 {
 .course {
   position: relative;
   margin-bottom: 20px;
-  width: 100%;
-  max-width: 320px;
+  width: 95%;
 }
 .course img {
-  width: 95%;
+  max-width: 95%;
   height: auto;
+  margin: 10px;
+  border-radius: 10px;
 }
 .course button {
   position: absolute;
