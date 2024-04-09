@@ -2,27 +2,18 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-app.listen(PORT,()=>console.log("listening on port", PORT))
+app.listen(PORT,()=>console.log("listening on port"+ PORT))
 
-////
-
-let baseDeDatos=0;
-app.get("/sumar", (req,res)=>{
-    baseDeDatos++
-    res.send("valor actual de la base de datos" + baseDeDatos)
-});
-
-////
 
 
 // Ruta para la página de inicio (Home)
-app.get('https://github.com/vlucascba/vargas-e4e/blob/299ab28bbc662834159097dde22c32aeb614e164/public/index.html', (req, res) => {
-    res.send('Estoy en la página de inicio');
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 // Ruta para la página de detalle de producto
-app.get('https://github.com/vlucascba/vargas-e4e/blob/299ab28bbc662834159097dde22c32aeb614e164/public/cursos.html', (req, res) => {
-    res.send('Estoy en la página de detalle de producto');
+app.get('/', (req, res) => {
+    res.send('https://github.com/vlucascba/vargas-e4e/blob/299ab28bbc662834159097dde22c32aeb614e164/public/cursos.html');
 });
 
 // Ruta para la página de inicio de sesión (Login)

@@ -6,7 +6,7 @@
     <title>Instituto de Inglés - Cursos </title>
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -40,24 +40,40 @@
                     <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                 </svg>
         -->
-                <a class="mi-boton2" href="https://goo.gl/maps/kzjG8Vsactq6648i7">Ubicación...</a>
+                <a class="mi-boton2" href="https://goo.gl/maps/kzjG8Vsactq6648i7">Ubicación</a>
             </div>
         </section>
         <!-- Resto del contenido de tu página... -->
-        <section class="mainmenu">
-            <div class="info">
-                <h3>Speaking</h3>
+        <main>
+            <div class="course">
+                <img src="https://github.com/vlucascba/vargas-e4e/blob/main/public/img/speack.jpeg?raw=true" alt="speaking">
+                <button onclick="toggleInfo(this)">Speaking</button>
+                <section class="info">
+                    <p></p>
+                </section>
             </div>
-            <div class="info">
-                <h3>Listening</h3>
+            <div class="course">
+                <img src="https://github.com/vlucascba/vargas-e4e/blob/main/public/img/listen.jpeg?raw=true" alt="listening">
+                <button onclick="toggleInfo(this)">Listening</button>
+                <section class="info">
+                    <p>Información</p>
+                </section>
             </div>
-            <div class="info">
-                <h3>Writing</h3>
+            <div class="course">
+                <img src="https://github.com/vlucascba/vargas-e4e/blob/main/public/img/write.jpeg?raw=true" alt="writing">
+                <button onclick="toggleInfo(this)">Writing</button>
+                <section class="info">
+                    <p>Información</p>
+                </section>
             </div>
-            <div class="info">
-                <h3>Reading</h3>
+            <div class="course">
+                <img src="https://github.com/vlucascba/vargas-e4e/blob/main/public/img/read.jpeg?raw=true" alt="reading">
+                <button onclick="toggleInfo(this)">Reading</button>
+                <section class="info">
+                    <p>Información</p>
+                </section>
             </div>
-        </section>
+        </main>
     </main>
 
     <footer>
@@ -101,4 +117,5 @@
 
     </footer>
 </body>
+<div class="scrollbar"></div>
 </html>
