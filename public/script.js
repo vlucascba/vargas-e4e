@@ -22,12 +22,3 @@ function toggleMenu() {
     navMenu.classList.toggle('show-menu');
 }
 
-/*barra scroll*/
-
-const scrollbar = document.querySelector('.scrollbar');
-    const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
-
-    scrollbar.addEventListener('input', function () {
-        const scrollPosition = this.value / 100 * pageHeight;
-        window.scrollTo(0, scrollPosition);
-    });

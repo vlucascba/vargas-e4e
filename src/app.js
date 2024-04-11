@@ -4,6 +4,14 @@ const PORT = 3000;
 
 app.listen(PORT,()=>console.log("listening on port"+ PORT))
 
+var bodyParser = require ("body-parser");
+var methodOverride = require ("method-override");
+
+app.use(bodyParser());
+app.use(methodOverride());
+app.use(function(err, req, res, next){
+    // logic
+});
 
 
 // Ruta para la página de inicio (Home)

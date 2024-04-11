@@ -36,7 +36,8 @@ html {
 html, body {
   font-size: 16px;
   max-width: 1200px;
-  overflow: hidden;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 }
 
 
@@ -46,15 +47,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.scrollbar {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  width: 10px;
-  height: 100px;
-  background-color: #333;
-  border-radius: 5px;
-}
+
 
   /*imagen principal */
 .imagenprincipal {  /*IMAGEN DE FONDO cuerpo principal*/
