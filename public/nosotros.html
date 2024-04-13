@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instituto de Inglés</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/nosotros.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <!-- Contenido del header (logo, menú, etc.) -->
-        <nav>
-            <ul>
-                <li><a href="sprint1.html">Inicio</a></li>
-                <li><a href="cursos.html">Cursos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+            <nav class="nav-bg">  <!-- barra principal-->
+                <ul class="nav-menu contenedor">
+                    <li class="nav-menu-item" style="list-style-type: none;">
+                        <a href="index.html" class="nav-menu-link nav-link">Home</a></li>
+                    <li class="nav-menu-item" style="list-style-type: none;">
+                        <a href="nosotros.html" class="nav-menu-link nav-link">nosotros</a></li>
+
+        <!--AULA VIRTUAL
+                        <li class="nav-menu-item" style="list-style-type: none;">
+                        <a href="#" class="nav-menu-link nav-link">aula virtual</a></li>
+        -->
+                    <li class="nav-menu-item" style="list-style-type: none;">
+                        <a href="#" class="nav-menu-link nav-link">contacto</a></li>
+                    </ul>
+                    <button class="boton-hamburguesa" onclick="toggleMenu()">☰</button>
+            </nav>
     </header>
 
     <main>
