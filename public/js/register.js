@@ -45,19 +45,3 @@ $(document).ready(() => {
     });
 });
 
-
-$(document).ready(() => {
-    // Button click event for Register
-    $('.register').click(function(e) {
-        e.preventDefault();
-        // Redirect to the registration page
-        window.location.href = '../registration.html';
-    });
-
-    // Button click event for Sign In
-    $('.signin').click(function(e) {
-        e.preventDefault();
-        // Redirect to the login page
-        window.location.href = '../login.html';
-    });
-});

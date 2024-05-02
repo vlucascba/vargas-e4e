@@ -1,47 +1,32 @@
 const express = require('express');
+const path = require('path');
 const app = express();
-const PORT = 3000;
 
-app.listen(PORT,()=>console.log("listening on port"+ PORT))
-
-var bodyParser = require ("body-parser");
-var methodOverride = require ("method-override");
-
-// Iniciando el servidor
-app.listen(PORT, () => {
-    console.log(`Servidor iniciado en el puerto ${PORT}`);
-});
-//
-//app.use(bodyParser());
-//app.use(methodOverride());
-//app.use(function(err, req, res, next){
-    // logic
-//});
-
-
-// Ruta para la página de inicio (Home)
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + 'home');
+    res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
-// Ruta para la página de detalle de producto
-app.get('/', (req, res) => {
-    res.send(__dirname + 'cursos');
+app.get('/cursos', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/cursos.html'));
 });
 
-// Ruta para la página de inicio de sesión (Login)
-app.get('/', (req, res) => {
-    res.send(__dirname + 'login');
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/login.html'));
 });
 
-// Ruta para la página de registro (Register)
-app.get('/', (req, res) => {
-    res.send(__dirname + 'registro');
+app.get('/register', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/register.html'));
 });
 
-// Ruta para la página del carrito (Cart)
-app.get('/carrito', (req, res) => {
-    res.send(__dirname + 'carrito');
+app.get('/registration', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/registration.html'));
 });
+
+const port = 3000;
+app.listen(port, () => {
+    console.log(`Servidor corriendo en http://localhost:${port}`);
+});
+
+
 
 
